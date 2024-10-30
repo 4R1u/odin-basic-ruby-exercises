@@ -20,7 +20,7 @@ def shift_char_right(char, number)
   if ((char >= 65 + number && char <= 90) ||
     (char >= 97 + number && char <= 122))
     # these numbers are the ASCII codes for (LIMIT)-Z, and (limit)-z
-    char += number
+    char -= number
   elsif ((char >= 65 && char <= 65  + number) ||
     (char >= 97 && char <= 97  + number))
     # for the ones that would go beyond "A" or "a"
