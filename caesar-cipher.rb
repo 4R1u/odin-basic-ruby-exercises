@@ -12,11 +12,11 @@ def shift_char(char, number)
   else
     char = char
   end
-  char
+  char.chr
 end
 
 
 def caesar_cipher(string, number)
   string_array = string.split(//)
-  string_array.map {|char| shift_char(char, number)}.map(&:chr).join("")
+  string_array.map {|char| shift_char(char, number)}.join("")
 end
