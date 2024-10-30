@@ -1,4 +1,4 @@
-def shift_char(char, number)
+def shift_char_left(char, number)
   char = char.ord
   if ((char >= 65 && char <= 90 - number) ||
     (char >= 97 && char <= 122 - number))
