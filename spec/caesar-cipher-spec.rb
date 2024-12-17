@@ -18,4 +18,10 @@ describe '#caesar_cipher' do
       expect(caesar_cipher('Hello, World!', 13)).to eq('Uryyb, Jbeyq!')
     end
   end
+
+  context 'when number is large and positive' do
+    it "returns 'Uryyb, Jbeyq!'" do
+      expect(caesar_cipher('Hello, World!', 39)).to eq('Uryyb, Jbeyq!')
+    end
+  end
 end
