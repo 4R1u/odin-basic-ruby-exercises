@@ -11,3 +11,11 @@ describe '#shift_char_right' do
     end
   end
 end
+
+describe '#caesar_cipher' do
+  context 'when number is small and positive' do
+    it "returns 'Uryyb, Jbeyq!'" do
+      expect(caesar_cipher('Hello, World!', 13)).to eq('Uryyb, Jbeyq!')
+    end
+  end
+end
